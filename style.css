@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Shrikhand&family=Timmana&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  color: rgb(200, 220, 255);
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px 0 !important;
+}
+[aria-controls="menuitems"] {
+  display: none;
+}
+.menubtn {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mainbg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(assets/bg.jpg);
+
+  margin: 50px;
+  border-radius: 16px;
+}
+.maincontainer {
+  display: grid;
+  gap: 30px;
+}
+#menuitems {
+  padding: 0;
+  display: grid;
+  gap: 15px;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.list-items {
+  /* From https://css.glass */
+  font-family: "Bebas Neue", cursive;
+  color: aliceblue;
+  letter-spacing: 8px;
+  font-size: 30px;
+  text-align: center;
+  padding: 8px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.list-items > a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.bannerpart {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "bpic bpic bpic var1"
+    "bpic bpic bpic var2";
+}
+.texteffect {
+  font-family: "Berkshire Swash", cursive;
+  text-shadow: 0px 0px 5px #0085dd;
+  font-size: 40px;
+  color: #003457;
+}
+
+.hero {
+  grid-area: bpic;
+  background: white url(assets/1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: rgb(231, 231, 231);
+  box-sizing: content-box;
+}
+.hero > * {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  text-shadow: 5px;
+}
+.variety1,
+.variety2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Shrikhand", cursive;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.variety1 {
+  grid-area: var1;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 300;
+}
+.variety2 {
+  grid-area: var2;
+}
+
+.sectionpart {
+  display: flex;
+}
+.unicode {
+  font-size: 60px;
+}
+.sectionpart {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.sectionitem {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.sectionitem > .texteffect {
+  text-shadow: 0px 0px 10px rgb(0, 195, 255);
+  color: rgb(154, 231, 255);
+}
+
+.sectionbrief {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 400px 1fr;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.briefitems2 {
+  font-family: "Timmana", sans-serif;
+}
+.briefitems2 h2 {
+  font-size: 50px;
+}
+.briefitems2 p {
+  font-size: 30px;
+}
+.briefitems2 > button {
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+}
+.pics {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.pics h2 {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.pics h2::before {
+  display: block;
+  content: "";
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(234, 0, 255) 100%
+  );
+}
+.pics h2::after {
+  display: block;
+  content: "";
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    rgb(234, 0, 255) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+@media (max-width: 1000px) {
+  .sectionbrief {
+    grid-template-columns: 300px 1fr;
+  }
+  .sectionpart {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .sectionbrief {
+    grid-template-columns: 200px 1fr;
+  }
+  .briefitems2 h2 {
+    font-size: 30px;
+  }
+  .briefitems2 p {
+    font-size: 20px;
+  }
+  .briefitems2 > button {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+  }
+  .bannerpart {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "bpic var1"
+      "bpic var2";
+  }
+  .price {
+    font-size: 30px;
+    font-weight: 150;
+  }
+  .variety1,
+  .variety2 {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sectionbrief {
+    grid-template-columns: 300px 1fr;
+  }
+  .sectionpart {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .sectionbrief {
+    grid-template-columns: 150px 1fr;
+  }
+  .briefitems2 h2 {
+    font-size: 15px;
+  }
+  .briefitems2 p {
+    font-size: 10px;
+  }
+  .briefitems2 > button {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+  }
+  .bannerpart {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "bpic"
+      "var1"
+      "var2";
+  }
+  .price {
+    font-size: 20px;
+    font-weight: 150;
+  }
+  .variety1,
+  .variety2 {
+    padding: 15px;
+  }
+  .hero > * {
+    border-radius: 8px;
+  }
+  .texteffect {
+    font-size: 10px;
+  }
+}
